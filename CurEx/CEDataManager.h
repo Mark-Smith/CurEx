@@ -1,5 +1,5 @@
 //
-//  CERestManager.h
+//  CEDataManager.h
 //  CurEx
 //
 //  Created by Mark Smith on 26/08/2016.
@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CERestManager : NSObject
+@interface CEDataManager : NSObject
 
 + (id)instance;
 
-- (void)getLatestWithCurrency:(NSString*)currency
-                    success:(void(^)(NSDictionary *currencyDict))success
+- (void)getLatestRatesForCurrency:(NSString*)getLatestRatesForCurrency
+                    success:(void(^)(NSDictionary *ratesDict))success
                     failure:(void(^)(NSError *error))failure;
+- (NSArray*)getCurrencyCodes;
     
 @end

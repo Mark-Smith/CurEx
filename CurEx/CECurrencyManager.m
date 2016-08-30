@@ -10,4 +10,15 @@
 
 @implementation CECurrencyManager
 
++ (id)instance {
+    return [[CECurrencyManager alloc] init];
+}
+
+- (CGFloat)convertValue:(NSInteger)value usingRate:(CGFloat)rate {
+    
+    CGFloat result = value*rate;
+    
+    return result;
+}
+
 @end

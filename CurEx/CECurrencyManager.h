@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CECurrencyManager : NSObject
+
++ (id)instance;
+
+- (CGFloat)convertValue:(NSInteger)value usingRate:(CGFloat)rate;
 
 @end

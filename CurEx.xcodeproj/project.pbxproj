@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8FBC9B970750E8E11C9F495 /* libPods-CurExTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CB78E5E63CF34CC46F017E /* libPods-CurExTests.a */; };
+		CE44BAE3BE83F12D8193598C /* libPods-CurEx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECD75B8D20F22C47E31F792 /* libPods-CurEx.a */; };
+		E903EB0C1D702BCE0048ECF9 /* CEExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E903EB0B1D702BCD0048ECF9 /* CEExchangeViewController.m */; };
+		E903EB0F1D704EF40048ECF9 /* CEDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E903EB0E1D704EF40048ECF9 /* CEDataManager.m */; };
+		E903EB121D7057CD0048ECF9 /* currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = E903EB111D7057CD0048ECF9 /* currencies.json */; };
+		E903EB1B1D7068A20048ECF9 /* CECurrencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E903EB1A1D7068A20048ECF9 /* CECurrencyManager.m */; };
+		E903EB261D7090F50048ECF9 /* license in Resources */ = {isa = PBXBuildFile; fileRef = E903EB1E1D7090F50048ECF9 /* license */; };
+		E903EB271D7090F50048ECF9 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = E903EB1F1D7090F50048ECF9 /* README.markdown */; };
+		E903EB281D7090F50048ECF9 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = E903EB231D7090F50048ECF9 /* UIView+Toast.m */; };
+		E903EB291D7090F50048ECF9 /* UIView+ToastExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = E903EB251D7090F50048ECF9 /* UIView+ToastExtras.m */; };
 		E98363B71D701A6A00D657F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E98363B61D701A6A00D657F5 /* main.m */; };
 		E98363BA1D701A6A00D657F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E98363B91D701A6A00D657F5 /* AppDelegate.m */; };
-		E98363BD1D701A6A00D657F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98363BC1D701A6A00D657F5 /* ViewController.m */; };
 		E98363C01D701A6A00D657F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98363BE1D701A6A00D657F5 /* Main.storyboard */; };
 		E98363C31D701A6A00D657F5 /* CurEx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E98363C11D701A6A00D657F5 /* CurEx.xcdatamodeld */; };
 		E98363C51D701A6A00D657F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98363C41D701A6A00D657F5 /* Assets.xcassets */; };
 		E98363C81D701A6A00D657F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98363C61D701A6A00D657F5 /* LaunchScreen.storyboard */; };
 		E98363D31D701A6A00D657F5 /* CurExTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E98363D21D701A6A00D657F5 /* CurExTests.m */; };
 		E98363DE1D701A6A00D657F5 /* CurExUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E98363DD1D701A6A00D657F5 /* CurExUITests.m */; };
+		FD598508E2DF6803201AB8D8 /* libPods-CurExUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03011ACA2D044DB274C4F5DB /* libPods-CurExUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +46,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03011ACA2D044DB274C4F5DB /* libPods-CurExUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CurExUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECD75B8D20F22C47E31F792 /* libPods-CurEx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CurEx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A8113E4F770F99D4765694E /* Pods-CurEx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurEx.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurEx/Pods-CurEx.release.xcconfig"; sourceTree = "<group>"; };
+		751B680E2A67F0A3160DF273 /* Pods-CurExTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurExTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurExTests/Pods-CurExTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75CB78E5E63CF34CC46F017E /* libPods-CurExTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CurExTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A216FC64B8D4E2C6AA8F1DA /* Pods-CurExUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurExUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurExUITests/Pods-CurExUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A1493D9B92CA00747365048E /* Pods-CurEx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurEx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurEx/Pods-CurEx.debug.xcconfig"; sourceTree = "<group>"; };
+		E903EB0A1D702BCD0048ECF9 /* CEExchangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEExchangeViewController.h; sourceTree = "<group>"; };
+		E903EB0B1D702BCD0048ECF9 /* CEExchangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEExchangeViewController.m; sourceTree = "<group>"; };
+		E903EB0D1D704EF40048ECF9 /* CEDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEDataManager.h; sourceTree = "<group>"; };
+		E903EB0E1D704EF40048ECF9 /* CEDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEDataManager.m; sourceTree = "<group>"; };
+		E903EB101D70503E0048ECF9 /* definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
+		E903EB111D7057CD0048ECF9 /* currencies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currencies.json; sourceTree = "<group>"; };
+		E903EB191D7068A20048ECF9 /* CECurrencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECurrencyManager.h; sourceTree = "<group>"; };
+		E903EB1A1D7068A20048ECF9 /* CECurrencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CECurrencyManager.m; sourceTree = "<group>"; };
+		E903EB1E1D7090F50048ECF9 /* license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
+		E903EB1F1D7090F50048ECF9 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		E903EB221D7090F50048ECF9 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		E903EB231D7090F50048ECF9 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		E903EB241D7090F50048ECF9 /* UIView+ToastExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ToastExtras.h"; sourceTree = "<group>"; };
+		E903EB251D7090F50048ECF9 /* UIView+ToastExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ToastExtras.m"; sourceTree = "<group>"; };
 		E98363B21D701A6A00D657F5 /* CurEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98363B61D701A6A00D657F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E98363B81D701A6A00D657F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E98363B91D701A6A00D657F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E98363BB1D701A6A00D657F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E98363BC1D701A6A00D657F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E98363BF1D701A6A00D657F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E98363C21D701A6A00D657F5 /* CurEx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CurEx.xcdatamodel; sourceTree = "<group>"; };
 		E98363C41D701A6A00D657F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +82,8 @@
 		E98363D91D701A6A00D657F5 /* CurExUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurExUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98363DD1D701A6A00D657F5 /* CurExUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurExUITests.m; sourceTree = "<group>"; };
 		E98363DF1D701A6A00D657F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F526D0B150B77E66417782EB /* Pods-CurExUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurExUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurExUITests/Pods-CurExUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAD670F2C689F11817C496FB /* Pods-CurExTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurExTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurExTests/Pods-CurExTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE44BAE3BE83F12D8193598C /* libPods-CurEx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FBC9B970750E8E11C9F495 /* libPods-CurExTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +107,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD598508E2DF6803201AB8D8 /* libPods-CurExUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AD393149348CFDB7669F8D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ECD75B8D20F22C47E31F792 /* libPods-CurEx.a */,
+				75CB78E5E63CF34CC46F017E /* libPods-CurExTests.a */,
+				03011ACA2D044DB274C4F5DB /* libPods-CurExUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E903EB1C1D7090E80048ECF9 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				E903EB1D1D7090F50048ECF9 /* Toast */,
+			);
+			name = Toast;
+			sourceTree = "<group>";
+		};
+		E903EB1D1D7090F50048ECF9 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				E903EB1E1D7090F50048ECF9 /* license */,
+				E903EB1F1D7090F50048ECF9 /* README.markdown */,
+				E903EB201D7090F50048ECF9 /* Toast */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		E903EB201D7090F50048ECF9 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				E903EB211D7090F50048ECF9 /* Toast */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		E903EB211D7090F50048ECF9 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				E903EB221D7090F50048ECF9 /* UIView+Toast.h */,
+				E903EB231D7090F50048ECF9 /* UIView+Toast.m */,
+				E903EB241D7090F50048ECF9 /* UIView+ToastExtras.h */,
+				E903EB251D7090F50048ECF9 /* UIView+ToastExtras.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		E98363A91D701A6A00D657F5 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +168,8 @@
 				E98363D11D701A6A00D657F5 /* CurExTests */,
 				E98363DC1D701A6A00D657F5 /* CurExUITests */,
 				E98363B31D701A6A00D657F5 /* Products */,
+				F0FC63188CBB45434DB1A90E /* Pods */,
+				9AD393149348CFDB7669F8D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,16 +186,22 @@
 		E98363B41D701A6A00D657F5 /* CurEx */ = {
 			isa = PBXGroup;
 			children = (
+				E903EB1C1D7090E80048ECF9 /* Toast */,
 				E98363B81D701A6A00D657F5 /* AppDelegate.h */,
 				E98363B91D701A6A00D657F5 /* AppDelegate.m */,
-				E98363BB1D701A6A00D657F5 /* ViewController.h */,
-				E98363BC1D701A6A00D657F5 /* ViewController.m */,
 				E98363BE1D701A6A00D657F5 /* Main.storyboard */,
 				E98363C41D701A6A00D657F5 /* Assets.xcassets */,
 				E98363C61D701A6A00D657F5 /* LaunchScreen.storyboard */,
 				E98363C91D701A6A00D657F5 /* Info.plist */,
 				E98363C11D701A6A00D657F5 /* CurEx.xcdatamodeld */,
 				E98363B51D701A6A00D657F5 /* Supporting Files */,
+				E903EB0A1D702BCD0048ECF9 /* CEExchangeViewController.h */,
+				E903EB0B1D702BCD0048ECF9 /* CEExchangeViewController.m */,
+				E903EB0D1D704EF40048ECF9 /* CEDataManager.h */,
+				E903EB0E1D704EF40048ECF9 /* CEDataManager.m */,
+				E903EB101D70503E0048ECF9 /* definitions.h */,
+				E903EB191D7068A20048ECF9 /* CECurrencyManager.h */,
+				E903EB1A1D7068A20048ECF9 /* CECurrencyManager.m */,
 			);
 			path = CurEx;
 			sourceTree = "<group>";
@@ -120,6 +209,7 @@
 		E98363B51D701A6A00D657F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E903EB111D7057CD0048ECF9 /* currencies.json */,
 				E98363B61D701A6A00D657F5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -143,6 +233,19 @@
 			path = CurExUITests;
 			sourceTree = "<group>";
 		};
+		F0FC63188CBB45434DB1A90E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1493D9B92CA00747365048E /* Pods-CurEx.debug.xcconfig */,
+				2A8113E4F770F99D4765694E /* Pods-CurEx.release.xcconfig */,
+				751B680E2A67F0A3160DF273 /* Pods-CurExTests.debug.xcconfig */,
+				FAD670F2C689F11817C496FB /* Pods-CurExTests.release.xcconfig */,
+				F526D0B150B77E66417782EB /* Pods-CurExUITests.debug.xcconfig */,
+				7A216FC64B8D4E2C6AA8F1DA /* Pods-CurExUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E98363E21D701A6A00D657F5 /* Build configuration list for PBXNativeTarget "CurEx" */;
 			buildPhases = (
+				9B87BAA4EAB05CC85B601627 /* [CP] Check Pods Manifest.lock */,
 				E98363AE1D701A6A00D657F5 /* Sources */,
 				E98363AF1D701A6A00D657F5 /* Frameworks */,
 				E98363B01D701A6A00D657F5 /* Resources */,
+				401600CDF2B2B657057A7192 /* [CP] Embed Pods Frameworks */,
+				5AC4ADCA8E587E460A570310 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E98363E51D701A6A00D657F5 /* Build configuration list for PBXNativeTarget "CurExTests" */;
 			buildPhases = (
+				3D6E7D2E83BBD626E47CB997 /* [CP] Check Pods Manifest.lock */,
 				E98363CA1D701A6A00D657F5 /* Sources */,
 				E98363CB1D701A6A00D657F5 /* Frameworks */,
 				E98363CC1D701A6A00D657F5 /* Resources */,
+				C5C39E9B93585FFE9E2A509A /* [CP] Embed Pods Frameworks */,
+				ECFC6664DF00A8EF4ABE385F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E98363E81D701A6A00D657F5 /* Build configuration list for PBXNativeTarget "CurExUITests" */;
 			buildPhases = (
+				23D3B8BE2074CB73D39D0BB0 /* [CP] Check Pods Manifest.lock */,
 				E98363D51D701A6A00D657F5 /* Sources */,
 				E98363D61D701A6A00D657F5 /* Frameworks */,
 				E98363D71D701A6A00D657F5 /* Resources */,
+				8E46F4DC7F7AD5FB67EBC4A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,8 +357,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E903EB261D7090F50048ECF9 /* license in Resources */,
 				E98363C81D701A6A00D657F5 /* LaunchScreen.storyboard in Resources */,
 				E98363C51D701A6A00D657F5 /* Assets.xcassets in Resources */,
+				E903EB121D7057CD0048ECF9 /* currencies.json in Resources */,
 				E98363C01D701A6A00D657F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,15 +381,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23D3B8BE2074CB73D39D0BB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D6E7D2E83BBD626E47CB997 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		401600CDF2B2B657057A7192 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurEx/Pods-CurEx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC4ADCA8E587E460A570310 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurEx/Pods-CurEx-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E46F4DC7F7AD5FB67EBC4A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurExUITests/Pods-CurExUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B87BAA4EAB05CC85B601627 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C39E9B93585FFE9E2A509A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurExTests/Pods-CurExTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECFC6664DF00A8EF4ABE385F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurExTests/Pods-CurExTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E98363AE1D701A6A00D657F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E98363BD1D701A6A00D657F5 /* ViewController.m in Sources */,
+				E903EB281D7090F50048ECF9 /* UIView+Toast.m in Sources */,
+				E903EB0C1D702BCE0048ECF9 /* CEExchangeViewController.m in Sources */,
 				E98363C31D701A6A00D657F5 /* CurEx.xcdatamodeld in Sources */,
 				E98363BA1D701A6A00D657F5 /* AppDelegate.m in Sources */,
 				E98363B71D701A6A00D657F5 /* main.m in Sources */,
+				E903EB0F1D704EF40048ECF9 /* CEDataManager.m in Sources */,
+				E903EB271D7090F50048ECF9 /* README.markdown in Sources */,
+				E903EB1B1D7068A20048ECF9 /* CECurrencyManager.m in Sources */,
+				E903EB291D7090F50048ECF9 /* UIView+ToastExtras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +658,7 @@
 		};
 		E98363E31D701A6A00D657F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1493D9B92CA00747365048E /* Pods-CurEx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CurEx/Info.plist;
@@ -428,6 +670,7 @@
 		};
 		E98363E41D701A6A00D657F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8113E4F770F99D4765694E /* Pods-CurEx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CurEx/Info.plist;
@@ -439,6 +682,7 @@
 		};
 		E98363E61D701A6A00D657F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751B680E2A67F0A3160DF273 /* Pods-CurExTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CurExTests/Info.plist;
@@ -451,6 +695,7 @@
 		};
 		E98363E71D701A6A00D657F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD670F2C689F11817C496FB /* Pods-CurExTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CurExTests/Info.plist;
@@ -463,6 +708,7 @@
 		};
 		E98363E91D701A6A00D657F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F526D0B150B77E66417782EB /* Pods-CurExUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CurExUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -474,6 +720,7 @@
 		};
 		E98363EA1D701A6A00D657F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A216FC64B8D4E2C6AA8F1DA /* Pods-CurExUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CurExUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -502,6 +749,7 @@
 				E98363E41D701A6A00D657F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E98363E51D701A6A00D657F5 /* Build configuration list for PBXNativeTarget "CurExTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +758,7 @@
 				E98363E71D701A6A00D657F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E98363E81D701A6A00D657F5 /* Build configuration list for PBXNativeTarget "CurExUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +767,7 @@
 				E98363EA1D701A6A00D657F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -9,5 +9,7 @@
 #ifndef definitions_h
 #define definitions_h
 
+#define kFixerDotIOBaseURL @"http://api.fixer.io/"
+#define kCurrenciesFile @"currencies.json"
 
 #endif /* definitions_h */
