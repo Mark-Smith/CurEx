@@ -27,29 +27,18 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wc-35-s33" userLabel="Source Currency Container">
                                                 <rect key="frame" x="300" y="0.0" width="300" height="100"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="GBP" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eDP-JD-htc" userLabel="Source Currency">
-                                                        <rect key="frame" x="20" y="35" width="120" height="30"/>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5P-mZ-l2a">
+                                                        <rect key="frame" x="20" y="-58" width="120" height="216"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="120" id="NjV-k3-5J3"/>
+                                                            <constraint firstAttribute="width" constant="120" id="xYt-Ya-F2V"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                        <connections>
-                                                            <outlet property="delegate" destination="Bgj-fe-ZVs" id="Diy-gg-yvf"/>
-                                                        </connections>
-                                                    </textField>
+                                                    </pickerView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="eDP-JD-htc" firstAttribute="centerY" secondItem="3wc-35-s33" secondAttribute="centerY" id="Kzf-Ej-rfA"/>
-                                                    <constraint firstItem="eDP-JD-htc" firstAttribute="leading" secondItem="3wc-35-s33" secondAttribute="leading" constant="20" id="UJA-CW-vDg"/>
-                                                    <constraint firstItem="eDP-JD-htc" firstAttribute="width" secondItem="3wc-35-s33" secondAttribute="width" multiplier="0.3" id="rLC-Dz-nab"/>
+                                                    <constraint firstItem="O5P-mZ-l2a" firstAttribute="leading" secondItem="3wc-35-s33" secondAttribute="leading" constant="20" id="eAP-72-VGk"/>
+                                                    <constraint firstItem="O5P-mZ-l2a" firstAttribute="centerY" secondItem="3wc-35-s33" secondAttribute="centerY" id="wl5-bP-7QO"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="rLC-Dz-nab"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kV5-Jx-bYJ" userLabel="Source Value Container">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
@@ -110,7 +99,7 @@
                                 <rect key="frame" x="0.0" y="277" width="600" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4V-3E-fsK" userLabel="Equals Button">
-                                        <rect key="frame" x="280.5" y="-18.5" width="39" height="83"/>
+                                        <rect key="frame" x="280" y="-19" width="39" height="83"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="59"/>
                                         <state key="normal" title="=">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -163,29 +152,18 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJ2-bV-nCx" userLabel="Destination Currency Container">
                                                 <rect key="frame" x="300" y="0.0" width="300" height="100"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="GBP" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lSK-5l-pme" userLabel="Destination Currency">
-                                                        <rect key="frame" x="20" y="35" width="120" height="30"/>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVN-7R-0CG">
+                                                        <rect key="frame" x="20" y="-58" width="120" height="216"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="120" id="o4b-AG-KZP"/>
+                                                            <constraint firstAttribute="width" constant="120" id="Rdm-RQ-t0U"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                        <connections>
-                                                            <outlet property="delegate" destination="Bgj-fe-ZVs" id="nfB-Xf-LT7"/>
-                                                        </connections>
-                                                    </textField>
+                                                    </pickerView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="lSK-5l-pme" firstAttribute="centerY" secondItem="CJ2-bV-nCx" secondAttribute="centerY" id="gi5-zv-jGq"/>
-                                                    <constraint firstItem="lSK-5l-pme" firstAttribute="width" secondItem="CJ2-bV-nCx" secondAttribute="width" multiplier="0.3" id="l8L-Ut-23F"/>
-                                                    <constraint firstItem="lSK-5l-pme" firstAttribute="leading" secondItem="CJ2-bV-nCx" secondAttribute="leading" constant="20" id="qMi-7o-o6k"/>
+                                                    <constraint firstItem="TVN-7R-0CG" firstAttribute="leading" secondItem="CJ2-bV-nCx" secondAttribute="leading" constant="20" id="9Kc-PU-2qR"/>
+                                                    <constraint firstItem="TVN-7R-0CG" firstAttribute="centerY" secondItem="CJ2-bV-nCx" secondAttribute="centerY" id="zYX-ht-eq5"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="l8L-Ut-23F"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,9 +248,9 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="destinationCurrencyTextField" destination="lSK-5l-pme" id="pu3-8y-9aR"/>
+                        <outlet property="destinationCurrencyPicker" destination="TVN-7R-0CG" id="Apu-jO-cVB"/>
                         <outlet property="destinationValueTextField" destination="bpQ-CL-kj2" id="a0o-kr-Vt3"/>
-                        <outlet property="sourceCurrencyTextField" destination="eDP-JD-htc" id="F4o-w3-T3q"/>
+                        <outlet property="sourceCurrencyPicker" destination="O5P-mZ-l2a" id="fjz-qQ-vHz"/>
                         <outlet property="sourceValueTextField" destination="wpk-sm-86G" id="Hm5-OT-meo"/>
                     </connections>
                 </viewController>

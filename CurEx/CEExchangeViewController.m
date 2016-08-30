@@ -25,12 +25,10 @@
 @property (assign) CGFloat sourceValue;
 @property (assign) CGFloat destinationValue;
 @property (weak, nonatomic) IBOutlet UITextField *sourceValueTextField;
-@property (weak, nonatomic) IBOutlet UITextField *sourceCurrencyTextField;
 @property (weak, nonatomic) IBOutlet UITextField *destinationValueTextField;
-@property (weak, nonatomic) IBOutlet UITextField *destinationCurrencyTextField;
 @property (nonatomic, strong) NSDictionary *rates;
-@property (nonatomic, strong) UIPickerView *sourceCurrencyPicker;
-@property (nonatomic, strong) UIPickerView *destinationCurrencyPicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *sourceCurrencyPicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *destinationCurrencyPicker;
 
 @property (nonatomic, strong) NSDate *dateOfSourceCurrencySelection;
 
@@ -53,22 +51,16 @@
     // default source value -  note that the destination value will only be set after a currency lookup has been made.
     self.sourceValue = 1.;
     
-    // be notified of changes to text fields
-    [self.sourceCurrencyTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
-    
     // configure text fields
     
-    self.sourceCurrencyPicker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 50, 100, 150)];
     [self.sourceCurrencyPicker setDataSource: self];
     [self.sourceCurrencyPicker setDelegate: self];
     self.sourceCurrencyPicker.showsSelectionIndicator = YES;
-    self.sourceCurrencyTextField.inputView = self.sourceCurrencyPicker;
+
     
-    self.destinationCurrencyPicker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 50, 100, 150)];
     [self.destinationCurrencyPicker setDataSource: self];
     [self.destinationCurrencyPicker setDelegate: self];
     self.destinationCurrencyPicker.showsSelectionIndicator = YES;
-    self.destinationCurrencyTextField.inputView = self.destinationCurrencyPicker;
     
     UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 50)];
     numberToolbar.barStyle = UIBarButtonItemStylePlain;
@@ -81,23 +73,27 @@
     
     // set initial currency codes
     self.sourceValueTextField.text = [NSString stringWithFormat: @"%.2f", self.sourceValue];
-    self.sourceCurrencyTextField.text = self.sourceCurrency;
-    self.destinationCurrencyTextField.text = self.destinationCurrency;
     
     // only refresh list of rates (for the currently selected osurce currency) after a period of kRefreshInterval seconds. Ensure that rates will be refreshed initially.
     self.dateOfSourceCurrencySelection = [NSDate distantPast];
-    
-    //[self.sourceValueTextField becomeFirstResponder];
 }
 
 // dismiss keyboard on background tap
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+/*- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     NSLog(@"touchesBegan:withEvent:");
     
     // catch all - assume picker is showing
     [self.sourceCurrencyTextField resignFirstResponder];
     [self.destinationCurrencyTextField resignFirstResponder];
     [super touchesBegan:touches withEvent:event];
+}*/
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // initialize pickers
+    [self.sourceCurrencyPicker selectRow:[self.currencies indexOfObject:@"EUR"] inComponent:0 animated:NO];
+    [self.destinationCurrencyPicker selectRow:[self.currencies indexOfObject:@"GBP"] inComponent:0 animated:NO];
 }
 
 // get dictionary of currencies based on value of source currency
@@ -152,7 +148,7 @@
 }
 
 // be notified of changes to text fields
--(void)textFieldDidChange :(UITextField *)textField{
+/*-(void)textFieldDidChange :(UITextField *)textField{
     NSLog( @"text changed: %@", textField.text);
     
     if (textField == self.sourceCurrencyTextField) {
@@ -163,7 +159,7 @@
         self.destinationValue = 0.;
         self.destinationValueTextField.text = @"";
     }
-}
+}*/
 
 #pragma mark - number pad methods
 
@@ -221,22 +217,22 @@
     // This method is triggered whenever the user makes a change to the picker selection.
     // The parameter named row and component represents what was selected.
     
-    self.destinationValue = 0.;
-    self.destinationValueTextField.text = @"";
-    
     if (pickerView == self.sourceCurrencyPicker) {
         
         // update text field
-        self.sourceCurrency = self.currencies[row];
-        self.sourceCurrencyTextField.text = self.sourceCurrency;
-        [self.sourceCurrencyTextField resignFirstResponder];
+        if (![self.sourceCurrency isEqualToString:self.currencies[row]]) {
+            self.dateOfSourceCurrencySelection = [NSDate date];
+            self.sourceCurrency = self.currencies[row];
+            self.destinationValue = self.sourceValue;
+            self.destinationValueTextField.text = [NSString stringWithFormat: @"%.2f", self.destinationValue];
+        }
         
     } else { // destination currency picker
         
-        // update text field
-        self.destinationCurrency = self.currencies[row];
-        self.destinationCurrencyTextField.text = self.destinationCurrency;
-        [self.destinationCurrencyTextField resignFirstResponder];
+        // update destination currency
+        if (![self.destinationCurrency isEqualToString:self.currencies[row]]) {
+            self.destinationCurrency = self.currencies[row];
+        }
     }
 
 }
@@ -252,7 +248,6 @@
 // The number of rows of data
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    NSInteger numRows = self.currencies.count;
     return self.currencies.count;
 }
 
